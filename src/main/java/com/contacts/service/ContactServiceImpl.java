@@ -35,6 +35,7 @@ public class ContactServiceImpl implements ContactService {
 	@Transactional
 	public void deleteContact(Long id) {
 		Contact contact = contactDao.find(id);
+		// @todo throw error here if contact is not found!
 		contactDao.delete(contact);
 	}
 

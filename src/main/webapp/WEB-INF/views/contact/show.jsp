@@ -16,6 +16,10 @@
 	</dl>
 </div>
 
+<c:url value="/${contact.id}/edit" var="editContactUrl" />
+
+<a href="${editContactUrl}" class="btn btn-primary btn-large">edit</a>
+
 <c:import url="/WEB-INF/views/contact/partials/contactDeleteForm.jsp">
 	<c:param name="contact" value="${contact}" />
 </c:import>

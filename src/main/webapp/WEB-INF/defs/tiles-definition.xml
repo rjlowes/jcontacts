@@ -6,23 +6,26 @@
 
     <definition name="defaultTemplate" template="/WEB-INF/views/template.jsp">
         <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
-        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
     </definition>
     
     <definition name="contact.index" extends="defaultTemplate">
     	<put-attribute name="body" value="/WEB-INF/views/contact/index.jsp" />
     </definition>
     
-    <definition name="contact.new" extends="defaultTemplate">
-    	<put-attribute name="body" value="/WEB-INF/views/contact/new.jsp" />
-    </definition>
-    
     <definition name="contact.show" extends="defaultTemplate">
     	<put-attribute name="body" value="/WEB-INF/views/contact/show.jsp" />
     </definition>
     
+    <definition name="contact.new" extends="defaultTemplate">
+    	<put-attribute name="body" value="/WEB-INF/views/contact/new.jsp" />
+    </definition>
+    
     <definition name="contact.edit" extends="defaultTemplate">
     	<put-attribute name="body" value="/WEB-INF/views/contact/edit.jsp" />
+    </definition>
+    
+    <definition name="exceptions.exception" extends="defaultTemplate">
+    	<put-attribute name="body" value="/WEB-INF/views/exceptions/exception.jsp" />
     </definition>
 	
 </tiles-definitions>

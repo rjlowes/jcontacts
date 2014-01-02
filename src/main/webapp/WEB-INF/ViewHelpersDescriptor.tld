@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib> 
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>valid</shortname>
+<info>Sample taglib for Substr operation</info>
+<uri>http://viralpatel.net/blogs/jsp/taglib/substr</uri>
+<tag>
+    <name>validClass</name>
+    <tagclass>com.contacts.jsp.tags.ValidationTagHandler</tagclass>
+    <info>Validation class printing function.</info>
+    <attribute>
+      <name>field</name>
+      <required>true</required>
+  	</attribute>
+    <attribute>
+      <name>cssClass</name>
+      <required>true</required>
+  	</attribute>
+    <attribute>
+      <name>errors</name>
+      <required>false</required>
+      <rtexprvalue>yes</rtexprvalue>  
+  </attribute>
+</tag>
+</taglib> 

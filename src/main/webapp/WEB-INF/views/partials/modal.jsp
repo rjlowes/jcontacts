@@ -13,7 +13,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-        <button type="button" class="btn btn-primary confirm">Go for it</button>
+        <button type="button" class="btn btn-primary">Go for it</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

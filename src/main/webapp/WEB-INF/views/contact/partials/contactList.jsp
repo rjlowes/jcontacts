@@ -16,7 +16,7 @@
 			<td>${contact.firstname}&nbsp;${contact.lastname}</td>
 			<td>${contact.email}</td>
 			<td>${contact.phone}</td>
-			<td><a href="${url}">Show&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a></td>
+			<td><a href="${url}">show&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a></td>
 		</tr>
 		</c:forEach>
 	</tbody>
