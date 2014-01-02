@@ -1,6 +1,12 @@
-# Spring MVC and Hibernate template application 
+# Simple Spring experiment CRUD system
 
-This is a template for a web application that uses Spring MVC and Hibernate. The sample code is a simple CRUD page that manipulates records for a single model object.
+Demo at http://jcontacts.herokuapp.com/
+
+## Tech
+- Spring 3
+- Hibernate 4
+- Tiles 3
+- Embedded Tomcat
 
 ## Running the application locally
 

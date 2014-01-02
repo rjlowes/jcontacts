@@ -1,5 +1,7 @@
 package com.contacts.controller;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.validation.Valid;
 
@@ -111,6 +113,13 @@ public class ContactController {
 	 */
 	@PostConstruct
 	public void prepareFakeDomain() {
+		// Remove what's there
+		List<Contact> contacts = contactService.listContacts();
+		for (Contact c : contacts) {
+			contactService.deleteContact(c.getId());
+		}
+		
+		// Add the test data
 		contactService.addOrUpdateContact(new Contact("Pete", "Mitchell", "mav@jcontactherokuapp.com", "07788555441"));
 		contactService.addOrUpdateContact(new Contact("Tyler", "Durden", "soap@jcontactherokuapp.com", "07788555442"));
 		contactService.addOrUpdateContact(new Contact("Roland", "Bozz", "tigerland@jcontactherokuapp.com", "07788555443"));
